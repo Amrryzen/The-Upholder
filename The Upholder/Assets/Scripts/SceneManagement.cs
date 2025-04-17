@@ -21,6 +21,12 @@ public class SceneManagement : MonoBehaviour
         StartCoroutine(Transition());
     }
 
+    public void QuitGame()
+{
+    Debug.Log("Game is quitting...");
+    Application.Quit();
+}
+
     // Mengubah opacity semua root objek (selain objek yang ditentukan) menjadi 0
     void SetOpacityForOtherObjects()
     {
